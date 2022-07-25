@@ -20,4 +20,10 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(MainViewModel::class)
     abstract fun bindsMainViewModel(mainViewModel: MainViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(com.example.myapplication.ui.fragments.main.MainViewModel::class)
+    abstract fun bindsMainFragmentViewModel(mainViewModel: com.example.myapplication.ui.fragments.main.MainViewModel): ViewModel
+
 }
